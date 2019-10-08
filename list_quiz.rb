@@ -37,8 +37,15 @@ end
 #puts bigger_two([1,2], [3,4]) #[3,4]
 #puts bigger_two([1,7], [4,4]) #[1,7]
 
-def series_up
-
+def series_up(n)
+    list = []
+    if n >= 1
+        list
 end
+
+puts series_up(1)
+puts series_up(2)
+puts series_up(3)
+puts series_up(4)
 
 
