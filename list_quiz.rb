@@ -1,6 +1,4 @@
 def three_even(list)
-    i = 0
-    count = 0 
     list.size.times do |n|
         if list[n]%2 == 0 && list[n+1]%2 == 0 && list[n+1] != nil && list[n+2]%2 == 0 && list[n+2] != nil
             return true
@@ -20,11 +18,27 @@ end
 
 def bigger_two(list1, list2)
     count = 0
-    total1 == 0
-    total2 == 0
-    list1.each do |n|
-        total1 = list[n] + total1
+    count2 = 0
+    list1.size.times do |n|
+        count = list1[n] + count
     end
+    list2.size.times do |n|
+        count2 = list2[n] + count2
+    end
+    if count >= count2
+        return list1
+    elsif count2 > count
+        return list2
+    else
+        return false
+    end
+end
+
+#puts bigger_two([1,2], [3,4]) #[3,4]
+#puts bigger_two([1,7], [4,4]) #[1,7]
+
+def series_up
+
 end
 
 
