@@ -37,15 +37,24 @@ end
 #puts bigger_two([1,2], [3,4]) #[3,4]
 #puts bigger_two([1,7], [4,4]) #[1,7]
 
+
+#I am starting by changing the code to what it needs to be
 def series_up(n)
-    list = []
-    if n >= 1
-        list
+    #nlist is the list that will be the output of the code
+    nlist = []
+    #i changed from an if statement to a loop.
+    (n*(n+1)/2+1).times do |i|
+        i.times do |x|
+            nlist.push(x+1)
+        end
+    end
+    #I use three dots to only get the information i need from the code
+    return nlist[0...(n*(n+1)/2)].to_a
 end
 
-puts series_up(1)
-puts series_up(2)
-puts series_up(3)
-puts series_up(4)
+print series_up(1)
+print series_up(2)
+print series_up(3)
+print series_up(4)
 
 
